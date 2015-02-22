@@ -13,7 +13,7 @@ wn.bgcolor("green")
 wn.title("Spiral")
 
 t = turtle.Pen()
-t.pensize(1)
+t.pensize(2)
 t.color("blue")
 t.speed(60)
 
