@@ -13,7 +13,7 @@ t.pensize(2)
 t.speed(60)
 
 def set_color():
-    i = random.randrange(0,4)
+    i = random.randrange(0,5)
     return colorlist[i]
 
 def square():
