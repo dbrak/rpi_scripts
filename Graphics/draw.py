@@ -18,6 +18,7 @@ def set_color():
 
 def square():
     t.color(set_color())
+    t.fillcolor(set_color())
     t.forward(length)
     t.left(90)
     t.forward(length)
