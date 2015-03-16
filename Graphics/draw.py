@@ -50,14 +50,9 @@ def hexaflower():
         hexagon()
         t.left(36)
 
-def octogon2(side):
+def octogon(side):
     for x in range (0,8):
         t.forward(side)
-        t.left(360/8)
-
-def octogon():
-    for x in range (0,8):
-        t.forward(50)
         t.left(360/8)
     
 #def octogon2():
