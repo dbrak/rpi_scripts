@@ -1,5 +1,3 @@
-import binascii
-
 input = raw_input('What text would you like to convert to Binary?')
 m = 'Your binary is:'
 
