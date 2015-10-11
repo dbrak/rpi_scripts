@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+s#!/usr/bin/env python
 
 import turtle
 import math

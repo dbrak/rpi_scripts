@@ -50,30 +50,11 @@ def hexaflower():
         hexagon()
         t.left(36)
 
-def octogon(side):
+def octogon():
     for x in range (0,8):
-        t.forward(side)
+        t.forward(length)
         t.left(360/8)
     
-#def octogon2():
-#    for x in range (0,8):
-#        t.forward(40)
-#        t.left(360/8)
-
-#def octogon3():
-#    for x in range (0,8):
-#        t.forward(30)
-#        t.left(360/8
-
-#def octogon4():
-#    for x in range (0,8):
-#        t.forward(20)
-#        t.left(360/8)
-
-#def octogon5():
-#    for x in range (0,8):
-#        t.forward(10)
-#        t.left(360/8)
 
 def spiderweb():
     octogon(50)
@@ -102,7 +83,6 @@ def setup():
     wn.onkey(left,"Left")
     wn.onkey(right,"Right")
     wn.onkey(octogon,'8')
-    wn.onkey(spiderweb,'s')
     wn.onkey(hexagon,'6')    
     wn.onkey(pendown,'d')        
     wn.onkey(penup,'u')
@@ -115,7 +95,7 @@ def setup():
 
 
 wn = turtle.Screen()
-    
+
 setup()
 
 turtle.done()
