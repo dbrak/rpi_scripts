@@ -12,6 +12,10 @@ t = turtle.Pen()
 t.pensize(2)
 t.speed(60)
 
+
+
+     
+     
 def set_color():
     i = random.randrange(0,4)
     return colorlist[i]
@@ -68,6 +72,10 @@ def roadtracks():
         t.penup()
         t.forward(10)
         t.pendown()
+
+
+
+
 
 def right():
     t.right(90)

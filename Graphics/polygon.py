@@ -1,4 +1,4 @@
-s#!/usr/bin/env python
+#!/usr/bin/env python
 
 import turtle
 import math
@@ -46,6 +46,7 @@ tu.goto(0,-40)
 tu.write ("The angle is " + str(180 - angle))
 tu.goto(0,-50)
 tu.write ("The area is " + str(area))
+
 
 
 turtle.done()
