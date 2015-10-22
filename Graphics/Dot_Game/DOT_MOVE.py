@@ -3,7 +3,6 @@
 import time
 import turtle
 
-t = turtle.Pen()
 t = turtle.Pen() 
 t.pensize(4)
 t.speed(0)
