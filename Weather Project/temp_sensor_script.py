@@ -18,20 +18,9 @@ for x in range (0,5):
 	t = s.temperature()
 	print(h)
 	print(t)
-	 
-    #Write to file
-    with open('temp_data.csv','a') as file:
-        a = csv.writer(file,delimiter=',');
-        data = [[time.strftime('%x'),time.strftime('%X'),h,t]];        
-        file.writerows(data)
-        file.close()
-
-    time.sleep(120)
-
- 
- 
- 
- 
- 
- 
- 
+	with open('temp_data.csv','a') as fp:
+	    a = csv.writer(fp,delimiter-',')
+	    data = [[time.strftime('%x'),time.strftime('%X'),h,t]]
+	    fp.writerows(data)
+	    fp.close()
+	time.sleep(120)
