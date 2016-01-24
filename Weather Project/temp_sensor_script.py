@@ -15,7 +15,8 @@ for x in range (0,5):
 	s.trigger()
 	h = s.humidity()
 	t = s.temperature()
-	print(h + ","+t)
+	print(h)
+	print(t)
 	time.sleep(120)
  
 
