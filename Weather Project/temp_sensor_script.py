@@ -12,7 +12,7 @@ pi = pigpio.pi()
 s = DHT22.sensor(pi,4)
 
 #Take reading and write values to variable
-for x in range (0,5):
+for x in range (0,1000):
 	s.trigger()
 	h = s.humidity()
 	t = s.temperature()
@@ -23,4 +23,4 @@ for x in range (0,5):
 	    data = [[time.strftime('%x'),time.strftime('%X'),h,t]]
 	    a.writerows(data)
 	    fp.close()
-	time.sleep(120)
+	time.sleep(300)
