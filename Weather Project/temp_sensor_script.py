@@ -21,6 +21,6 @@ for x in range (0,5):
 	with open('temp_data.csv','a') as fp:
 	    a = csv.writer(fp,delimiter=',')
 	    data = [[time.strftime('%x'),time.strftime('%X'),h,t]]
-	    fp.writerows(data)
+	    a.writerows(data)
 	    fp.close()
 	time.sleep(120)
