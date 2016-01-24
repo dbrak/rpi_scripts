@@ -17,7 +17,7 @@ t = s.temperature()
 
 #Write to file
 file = open('temp_data.csv','a')
-file.write(h,t)
+file.write(t + "," + h)
 file.close()
 
  
