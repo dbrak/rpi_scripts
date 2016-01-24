@@ -8,6 +8,7 @@ git add <filename> :: Add to the commit
 git add -A :: Adds everything that has changed
 
 git commit -m "comment" :: Commits the change locally
+To close vi window type: *:wq
 
 git push :: Pushes the change to github
 
