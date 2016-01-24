@@ -5,6 +5,7 @@ import pigpio
 import sys
 sys.path.append('/home/pi/PIGPIO')
 import DHT22
+import cvs
 
 #instantiate pi and sensor objects
 pi = pigpio.pi()
@@ -17,17 +18,15 @@ for x in range (0,5):
 	t = s.temperature()
 	print(h)
 	print(t)
-	time.sleep(120)
- 
+	 
+    #Write to file
+    with open('temp_data.csv','a') as file:
+        a = csv.writer(file,delimiter=',');
+        data = [[time.strftime('%x'),time.strftime('%X'),h,t]];        
+        file.writerows(data)
+        file.close()
 
-
-
-
-
-#Write to file
-#file = open('temp_data.csv','a')
-#file.write(t)
-#file.close()
+    time.sleep(120)
 
  
  
