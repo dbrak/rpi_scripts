@@ -5,7 +5,6 @@ import pigpio
 import sys
 sys.path.append('/home/pi/PIGPIO')
 import DHT22
-import cvs
 
 #instantiate pi and sensor objects
 pi = pigpio.pi()
