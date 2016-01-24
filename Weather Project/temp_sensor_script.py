@@ -19,7 +19,7 @@ for x in range (0,5):
 	print(h)
 	print(t)
 	with open('temp_data.csv','a') as fp:
-	    a = csv.writer(fp,delimiter-',')
+	    a = csv.writer(fp,delimiter=',')
 	    data = [[time.strftime('%x'),time.strftime('%X'),h,t]]
 	    fp.writerows(data)
 	    fp.close()
