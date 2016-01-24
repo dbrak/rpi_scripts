@@ -10,15 +10,23 @@ import DHT22
 pi = pigpio.pi()
 s = DHT22.sensor(pi,4)
 
-#Take reading and write values to varible
-s.trigger()
-h = s.humidity()
-t = s.temperature()
+#Take reading and write values to variable
+for x in range (0,5):
+	s.trigger()
+	h = s.humidity()
+	t = s.temperature()
+	print(h + ","+t)
+	time.sleep(120)
+ 
+
+
+
+
 
 #Write to file
-file = open('temp_data.csv','a')
-file.write(t)
-file.close()
+#file = open('temp_data.csv','a')
+#file.write(t)
+#file.close()
 
  
  
@@ -26,5 +34,4 @@ file.close()
  
  
  
- #time.sleep(300)
  
