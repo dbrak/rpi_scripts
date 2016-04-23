@@ -42,7 +42,9 @@ for i in range(1,100):
 		print "Sorry, too many tries.  You lose!"
 
 	if s >= 100:
+		print "----------"	
 		print "You won!!!"
+		print "----------"		
 		break
 
 	x = randint(1,8) 	
@@ -55,7 +57,10 @@ for i in range(1,100):
 	print "----------"
 	
 	if comp_s >= 100:
+		print "----------"	
 		print "I won!!!"
+		print "Too bad!  Try again."
+		print "----------"
 		break 
 	
 	
