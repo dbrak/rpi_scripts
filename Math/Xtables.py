@@ -76,7 +76,7 @@ def click():
 	maxbox.insert(END, max)
 	maxbox.config(state = 'readonly')
 	
-	Button(main, text = "SUBMIT", width = bw, command = click2).grid(row = 3, column = 0, sticky = N)
+	Button(main, text = "SUBMIT", width = bw, command = calc).grid(row = 3, column = 0, sticky = N)
 
 
 Button(main, text = "SUBMIT", width = bw, command = click).grid(row = 3, column = 1, sticky = N)
@@ -108,7 +108,7 @@ maxbox.grid(row = 1, column = 2, sticky = N)
 maxbox.config(state = 'readonly')
 #Submit Button
 
-def click2():
+def calc():
 	answer = int(quAnswer.get())
 	s = int(scorebox.get())
 	n1 = int(box1.get())
@@ -140,7 +140,7 @@ def click2():
 		
 		quAnswer.delete(0,END)
 		
-		Button(main, text = "SUBMIT", width = bw, command = click2).grid(row = 3, column = 0, sticky = N)
+		Button(main, text = "SUBMIT", width = bw, command = calc).grid(row = 3, column = 0, sticky = N)
 		
 	
 
