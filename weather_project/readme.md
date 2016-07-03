@@ -34,6 +34,6 @@ Running Remotely
 When running remotely the script was terminating when the SSH session ended.  Hopefully, I solved this problem but running the script with the nohup command to catch the hangup signal:
 
 ```
-nohup pythong <script_name.py> &
+nohup python <script_name.py> &
 ```
 
